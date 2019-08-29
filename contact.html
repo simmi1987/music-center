@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+	function formValidation()
+{
+	var email = document.getElementById("email").value;
+	var name = document.getElementById("name").value;
+	var query = document.getElementById("query").value;
+	if(email == "" && name == "" && query == ""){
+		alert("Please eneter all the details");
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+</script>
+<title>Contact Page</title>
+</head>
+
+<body>
+<div class="top">
+		<a href="cooming.html">Login</a>
+		<a href="cooming.html">Register</a>
+</div>
+<div class="header">
+	<logo><a href="index.html"><img src="images/facebook.jpg"></a></logo>
+	<div class="name">Music Center</div>
+  <div class="menu" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a href="cooming.html">Events</a>
+		<a href="cooming.html">Musos</a>
+		<a href="contact.html" class="active">Contact</a>
+		<a href="about.html">About US</a>
+		<a href="cooming.html">Members</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i></a>
+	</div>
+</div>
+<div class="contactform">
+	<h1>Contact Form</h1>
+	<p>The Townsville Community Music Centre is able to assist you in a variety of ways. Whether you are a musician looking for support to stage an event, a student seeking a teacher, or simply have a music based enquiry... we are here to help!</br> 
+If you'd like to contact us, or are looking for more information about what we can offer, please provide your details in the boxes below and we will respond as soon as possible.</p>
+	<form action="" name="contact" onSubmit="return formValidation();">
+	<input type="text" id="email" name="email" placeholder="Enter your email"><br>
+	<input type="text" id="name" name="name" placeholder="Enter your name"><br>
+	<input type="text" id="subject" name="subject" placeholder="Enter subject"><br>
+	<textarea id="query" name="query" placeholder="Write query "></textarea></br>
+	<button type="submit" id="login" name="submitquery" value="submitquery">submitquery</button>
+	<button type="reset" name="reset" value="reset">Reset</button>
+	</form>
+</div>
+<div class="contactdetail">
+	<h1>Other Contact Details:</h1>
+	<p><b>Phone:</b> (07) 4724 2086</p>
+	<p><b>Postal Address:</b> PO Box 1006,</br>Townsville, Qld 4810</p>
+	<p><b>Office Address:</b> Townsville Civic Theatre,</br>41 Boundary Street,</br>Townsville, Qld 4810</p>
+	<p>Please make an appointment before visiting the office, as we cannot guarantee that we will be in attendance.<p/>
+</div>
+
+<div style="clear:both"></div>
+<div class="footer">
+<img src="images/footer3.png" class="footer1">
+<img src="images/footer1.png" class="footer2">
+<img src="images/facebook.jpg" class="facebook"></br>
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftownsvillemusic%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+</script>
+</body>
+</html>
